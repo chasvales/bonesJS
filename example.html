@@ -1,0 +1,50 @@
+<html lang="en"><head>
+	<meta charset="UTF-8">
+	<title>BonesJS Sample</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Source+Sans+Pro:300,400" rel="stylesheet">
+	<style type="text/css">
+		body{
+			font-family: 'Open Sans Condensed', sans-serif;
+		}
+		#main-content-wrapper{
+			padding: 10px 0;
+		}
+		#body-wrapper{
+			width: 100%;
+			max-width: 1200px;
+			padding: 0 20px;
+			margin: auto;
+		}
+		a{
+			margin-right: 10px;
+		}
+		#loading{
+			position: fixed;
+			padding: 10px;
+			top: 50vh;
+			left: 0;
+			right: 0;
+			margin: auto;
+			z-index: 100;
+			text-align: center;
+			display: none;
+		}
+		#loading.load{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div id="loading">loading / retrieving request</div>
+	<div id="body-wrapper">
+		<h1>BonesJS Sample</h1>
+		<a href="#/simple">Sample 1</a>
+		<a href="#/withdata/Chas Test">Sample 2 With Data</a>
+		<a href="#/multidata/Chas Test|More Data">Sample 3 With Muiltiple Data</a>
+		<section id="main-content-wrapper">Click one of the links above to get started</section>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script src="bones.js"></script>
+	<script type="text/javascript" src="custom.js"></script>
+</body></html>
